@@ -1,11 +1,6 @@
 package article;
 import documents.Document;
-
-import java.io.Serializable;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.List;
 
 public class Article extends Document   {
 

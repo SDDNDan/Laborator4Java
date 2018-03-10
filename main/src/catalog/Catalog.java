@@ -2,10 +2,7 @@ package catalog;
 import deserialization.Deserialization;
 import documents.Document;
 import serialization.Serialization;
-
 import java.io.Serializable;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 

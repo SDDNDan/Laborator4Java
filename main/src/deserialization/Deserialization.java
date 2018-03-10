@@ -1,14 +1,9 @@
 package deserialization;
-
 import catalog.Catalog;
-import documents.Document;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 
 public class Deserialization {
     Catalog catalog;

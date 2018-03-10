@@ -1,7 +1,6 @@
 package documents;
 
 import java.io.Serializable;
-import java.nio.file.Path;
 import java.util.List;
 
 public abstract class Document implements Serializable{
@@ -24,7 +23,6 @@ public abstract class Document implements Serializable{
         this.year = year;
         this.authors = authors;
         this.pathList = path;
-
     }
 
 
