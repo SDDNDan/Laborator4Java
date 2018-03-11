@@ -1,4 +1,6 @@
 package book;
+import customException.AuthorsIsInvalid;
+import customException.YearInvalid;
 import documents.Document;
 import shell.AddCommand;
 
@@ -19,10 +21,10 @@ public class Book extends Document  {
         {
             int i;
             f=new FileReader(path);
-            if (year>2018) throw  new IllegalArgumentException();
+            if (year>2018) throw  new YearInvalid("Year is invalid");
             for ( i=1;i<authors.length()-1;i++) {
                 if ( (authors.charAt(i)<'A' || authors.charAt(i)>'Z') && (authors.charAt(i)<'a' || authors.charAt(i)>'z') && authors.charAt(i)!=' ' && authors.charAt(i)!='.')
-                            throw new IllegalArgumentException();
+                            throw new AuthorsIsInvalid("Name is invalid");
             }
         }
         catch(FileNotFoundException e)
@@ -31,11 +33,17 @@ public class Book extends Document  {
             System.exit(1);
 
         }
-        catch(IllegalArgumentException e)
+        catch (YearInvalid e)
         {
-            System.err.println("Year or authos  input  is invalid");
+            System.err.println("Year is invalid");
             System.exit(1);
         }
+        catch (AuthorsIsInvalid e)
+        {
+            System.err.println("Name is invalid");
+            System.exit(1);
+        }
+
 
     }
 
