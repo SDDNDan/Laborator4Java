@@ -8,22 +8,23 @@ import java.util.List;
 
 public class Catalog implements Serializable{
 
-    public List<Document> documentList = new ArrayList<>();
+        public List<Document> documentList = new ArrayList<>();
 
-    public void add(Document document)
-    {
-        documentList.add(document);
-    }
-    public void save(String path)
-    {
-        Serialization serialization;
-        serialization = new Serialization(path,this);
+        public void add(Document document)
+        {
 
-    }
-    public void load(String path)
-    {
-        Deserialization deserialization = new Deserialization();
-        Catalog catalogAux = deserialization.Deserialization(path);
+            documentList.add(document);
+        }
+        public void save(String path)
+        {
+            Serialization serialization;
+            serialization = new Serialization(path,this);
+
+        }
+        public void load(String path)
+        {
+            Deserialization deserialization = new Deserialization();
+            Catalog catalogAux = deserialization.Deserialization(path);
         this.documentList.clear();
         for(Document i : catalogAux.documentList)
         {
