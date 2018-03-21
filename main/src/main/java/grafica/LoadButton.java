@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoadButton implements ActionListener {
-    @Override
+
     public void actionPerformed(ActionEvent e) {
         Catalog catalog = new Catalog();
         catalog.load("C:/Users/Dan/Desktop/catalog.dat");
