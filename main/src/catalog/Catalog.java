@@ -30,6 +30,8 @@ public class Catalog implements Serializable{
         {
             this.documentList.add(i);
         }
+
+
     }
     public void list()
     {
