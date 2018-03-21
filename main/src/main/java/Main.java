@@ -18,8 +18,10 @@ public class Main {
 //        catalog2.load("C:/Users/Dan/Desktop/catalog.dat");
 //        catalog2.list();
 
-        CatalogFrame catalogFrame = new CatalogFrame();
-        catalogFrame.setVisible(true);
+        //CatalogFrame catalogFrame = new CatalogFrame();
+        //catalogFrame.setVisible(true);
+
+        
 
 
 
