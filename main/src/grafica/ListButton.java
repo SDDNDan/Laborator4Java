@@ -5,6 +5,7 @@ import catalog.Catalog;
 import documents.Document;
 
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,6 +23,7 @@ public class ListButton implements ActionListener {
             catalogFrame.changeString(contor,string);
             contor++;
         }
+
 
 
     }

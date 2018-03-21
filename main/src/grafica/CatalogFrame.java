@@ -10,7 +10,7 @@ public class CatalogFrame {
 
 
     private static String[] stringList = new String[1000];
-    JList jList;
+    private static JList jList;
     private static JTextField jTextField;
     private static JTextField jTextField2;
     private static JTextField jTextField3;
@@ -21,6 +21,7 @@ public class CatalogFrame {
         if(ok==true)
         container();
     }
+
 
     public void changeString(int position,String string)
     {
@@ -187,6 +188,14 @@ public class CatalogFrame {
 
         TreeButton treeButton = new TreeButton();
         jButton9.addActionListener(treeButton);
+
+        JButton jButton10 = new JButton("Create Xml");
+        jButton10.setBounds(500,170,120,30);
+        panel.add(jButton10);
+
+        CreateXmlButton createXmlButton = new CreateXmlButton();
+        jButton10.addActionListener(createXmlButton);
+
 
         f.add(panel);
         f.setSize(660,660);

@@ -18,14 +18,12 @@ public class Main {
 //        catalog2.load("C:/Users/Dan/Desktop/catalog.dat");
 //        catalog2.list();
 
-        //CatalogFrame catalogFrame = new CatalogFrame();
-        //catalogFrame.setVisible(true);
+        CatalogFrame catalogFrame = new CatalogFrame();
+        catalogFrame.setVisible(true);
 
-        Catalog catalog = new Catalog();
-        catalog.load("C:/Users/Dan/Desktop/book.txt");
 
-        CreateXml createXml = new CreateXml();
-        createXml.write("C:/Users/Dan/Desktop/XmlMeu.xml",catalog);
+
+
 
 
 

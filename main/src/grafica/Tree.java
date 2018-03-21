@@ -38,7 +38,7 @@ public class Tree extends JFrame{
         tree = new JTree(Documente);
         add(add(new JScrollPane(tree)));
 
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         this.setTitle("JTree Example");
         this.pack();
         this.setVisible(true);

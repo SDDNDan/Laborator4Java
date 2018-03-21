@@ -2,8 +2,6 @@ package shell;
 
 import book.Book;
 import catalog.Catalog;
-import com.sun.jdi.IntegerValue;
-import com.sun.jdi.connect.Connector;
 import documents.Document;
 
 import java.io.BufferedReader;
@@ -11,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Shell implements AddCommand,SaveCommand,LoadCommand,ListCommand {
-    Catalog catalog=new Catalog();
+    private Catalog catalog=new Catalog();
     public Shell() {
 
         int argumentsNumber = 0, i;

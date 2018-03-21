@@ -54,7 +54,7 @@ public class Table extends JFrame implements ActionListener {
         this.add(new JScrollPane(table));
 
         this.setTitle("Catalog");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         this.pack();
         this.setVisible(true);
     }
